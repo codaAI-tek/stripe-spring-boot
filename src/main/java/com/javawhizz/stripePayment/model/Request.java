@@ -12,13 +12,13 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Request {
     @NotNull
-    @Min(4)
+    @Min(1)
     private Long amount;
 
     @Email
     private String email;
 
     @NotBlank
-    @Size(min = 5, max = 200)
+    @Size(min = 1, max = 200)
     private String productName;
 }
